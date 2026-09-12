@@ -170,11 +170,11 @@ function InstagramIcon() {
 
 function SocialCard() {
   const socials = [
-    { label: 'YouTube', icon: <YoutubeIcon /> },
+    { label: 'YouTube',href: 'https://www.youtube.com/@PankajNarwade', icon: <YoutubeIcon /> },
     { label: 'Email', href: 'mailto:pankajnarwade.work@gmail.com', icon: <EmailIcon /> },
-    { label: 'LinkedIn', icon: <LinkedInIcon /> },
+    { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pankaj-narwade-13a053260/', icon: <LinkedInIcon /> },
     { label: 'GitHub', href: 'https://github.com/PankajNarwade28', icon: <GithubIcon /> },
-    { label: 'Instagram', icon: <InstagramIcon /> },
+    { label: 'Instagram', href: 'https://www.instagram.com/pankajnarwade.patil/',icon: <InstagramIcon /> },
   ];
 
   return (
