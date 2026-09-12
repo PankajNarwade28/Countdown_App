@@ -90,6 +90,114 @@ function getCountdownParts(targetDate) {
   };
 }
 
+function IconShell({ children, href, label }) {
+  const classes =
+    'flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white transition hover:-translate-y-0.5 hover:border-cyan-300/40 hover:bg-white/10 hover:shadow-lg hover:shadow-cyan-500/10';
+
+  if (href) {
+    return (
+      <a href={href} target="_blank" rel="noreferrer" className={classes} aria-label={label} title={label}>
+        {children}
+      </a>
+    );
+  }
+
+  return (
+    <div className={classes} aria-label={label} title={label}>
+      {children}
+    </div>
+  );
+}
+
+function EmailIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" aria-hidden="true">
+      <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" fill="#F3F4F6" />
+      <path d="M4 7.5L12 13L20 7.5" stroke="#ef4444" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M4 18.5L9.8 12.9" stroke="#ef4444" strokeWidth="2" strokeLinecap="round" />
+      <path d="M20 18.5L14.2 12.9" stroke="#ef4444" strokeWidth="2" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function YoutubeIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" aria-hidden="true">
+      <rect x="2.5" y="6.5" width="19" height="11" rx="3" fill="#ef4444" />
+      <path d="M10 9.5L15 12L10 14.5V9.5Z" fill="#fff" />
+    </svg>
+  );
+}
+
+function GithubIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-7 w-7" fill="currentColor" aria-hidden="true">
+      <path d="M12 2.5C6.75 2.5 2.5 6.8 2.5 12.1c0 4.25 2.75 7.85 6.56 9.12.48.09.66-.21.66-.47 0-.23-.01-.84-.01-1.65-2.67.59-3.23-1.18-3.23-1.18-.44-1.15-1.08-1.46-1.08-1.46-.88-.6.07-.59.07-.59.97.07 1.48 1.01 1.48 1.01.86 1.49 2.27 1.06 2.83.81.09-.64.34-1.06.62-1.31-2.13-.25-4.37-1.08-4.37-4.8 0-1.06.37-1.93.98-2.62-.1-.25-.42-1.25.1-2.6 0 0 .8-.26 2.62 1.01.76-.21 1.56-.32 2.36-.32s1.6.11 2.36.32c1.82-1.27 2.62-1.01 2.62-1.01.52 1.35.2 2.35.1 2.6.61.69.98 1.56.98 2.62 0 3.73-2.24 4.55-4.38 4.8.35.31.66.91.66 1.84 0 1.31-.01 2.36-.01 2.68 0 .26.18.56.67.46 3.8-1.27 6.55-4.87 6.55-9.12 0-5.3-4.25-9.6-9.5-9.6Z" />
+    </svg>
+  );
+}
+
+function LinkedInIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="4" fill="#0A66C2" />
+      <path d="M8 10.5V17" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
+      <circle cx="8" cy="7.2" r="1.2" fill="#fff" />
+      <path d="M12.3 17V10.8" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
+      <path d="M12.3 13.1c0-1.4.9-2.5 2.2-2.5s2.2 1.1 2.2 2.5V17" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function InstagramIcon() {
+  return (
+    <svg viewBox="0 0 24 24" className="h-7 w-7" fill="none" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="url(#instagramGradient)" />
+      <rect x="6.2" y="6.2" width="11.6" height="11.6" rx="4" stroke="#fff" strokeWidth="1.8" />
+      <circle cx="12" cy="12" r="2.8" stroke="#fff" strokeWidth="1.8" />
+      <circle cx="16.2" cy="7.8" r="1" fill="#fff" />
+      <defs>
+        <linearGradient id="instagramGradient" x1="4" y1="20" x2="20" y2="4" gradientUnits="userSpaceOnUse">
+          <stop stopColor="#FEDA75" />
+          <stop offset="0.35" stopColor="#FA7E1E" />
+          <stop offset="0.7" stopColor="#D62976" />
+          <stop offset="1" stopColor="#962FBF" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+}
+
+function SocialCard() {
+  const socials = [
+    { label: 'YouTube', icon: <YoutubeIcon /> },
+    { label: 'Email', href: 'mailto:pankajnarwade.work@gmail.com', icon: <EmailIcon /> },
+    { label: 'LinkedIn', icon: <LinkedInIcon /> },
+    { label: 'GitHub', href: 'https://github.com/PankajNarwade28', icon: <GithubIcon /> },
+    { label: 'Instagram', icon: <InstagramIcon /> },
+  ];
+
+  return (
+    <section className="w-full max-w-3xl rounded-[1.5rem] border border-white/10 bg-[#0b1020] px-6 py-7 shadow-2xl shadow-black/30 backdrop-blur-xl sm:px-8">
+      <div className="mb-5 pb-3">
+        <h2 className="text-2xl font-black tracking-tight text-white sm:text-3xl">Let's Connect</h2>
+        <div className="mt-3 h-1 w-12 rounded-full bg-cyan-400" />
+        <p className="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
+          Follow my journey and stay updated with my latest projects and insights.
+        </p>
+      </div>
+
+      <div className="flex flex-wrap items-center gap-5">
+        {socials.map((social) => (
+          <IconShell key={social.label} href={social.href} label={social.label}>
+            {social.icon}
+          </IconShell>
+        ))}
+      </div>
+    </section>
+  );
+}
+
 function Home() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -120,7 +228,7 @@ function Home() {
 
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.12),_transparent_30%),linear-gradient(180deg,_#020617_0%,_#0f172a_45%,_#020617_100%)] px-4 py-10 text-white sm:px-6 lg:px-8">
-      <div className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-5xl items-center justify-center">
+      <div className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-6xl flex-col items-center justify-center gap-6">
         <section className="w-full max-w-2xl rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-10">
           <div className="mb-8 space-y-3 text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.4em] text-amber-300/90">Countdown Timer</p>
@@ -151,6 +259,8 @@ function Home() {
             </button>
           </form>
         </section>
+
+        <SocialCard />
       </div>
     </main>
   );

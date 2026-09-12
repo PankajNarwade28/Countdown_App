@@ -1,0 +1,9 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="48" fill="#020617" />
+  <rect x="72" y="72" width="1056" height="486" rx="40" fill="#0F172A" stroke="#334155" />
+  <text x="120" y="205" fill="#FDE68A" font-size="58" font-family="Arial, Helvetica, sans-serif" font-weight="700">Countdown Timer</text>
+  <text x="120" y="280" fill="#E2E8F0" font-size="34" font-family="Arial, Helvetica, sans-serif">Share a live countdown for any date</text>
+  <text x="120" y="355" fill="#94A3B8" font-size="28" font-family="Arial, Helvetica, sans-serif">Unique URL • Flip-clock style • Mobile friendly</text>
+  <rect x="120" y="412" width="320" height="86" rx="20" fill="#F59E0B" />
+  <text x="170" y="468" fill="#111827" font-size="34" font-family="Arial, Helvetica, sans-serif" font-weight="700">countdownbypankaj</text>
+</svg>
