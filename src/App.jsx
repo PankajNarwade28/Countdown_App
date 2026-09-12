@@ -170,7 +170,7 @@ function InstagramIcon() {
 
 function SocialCard() {
   const socials = [
-    { label: 'YouTube',href: 'https://www.youtube.com/@PankajNarwade', icon: <YoutubeIcon /> },
+    { label: 'YouTube',href: 'https://youtube.com/@ukdvibesbypankajnarwade?si=LCubq6RFbjTGb9LB', icon: <YoutubeIcon /> },
     { label: 'Email', href: 'mailto:pankajnarwade.work@gmail.com', icon: <EmailIcon /> },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/pankaj-narwade-13a053260/', icon: <LinkedInIcon /> },
     { label: 'GitHub', href: 'https://github.com/PankajNarwade28', icon: <GithubIcon /> },
