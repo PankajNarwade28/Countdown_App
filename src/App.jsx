@@ -229,7 +229,7 @@ function Home() {
   return (
     <main className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(251,191,36,0.12),_transparent_30%),linear-gradient(180deg,_#020617_0%,_#0f172a_45%,_#020617_100%)] px-4 py-10 text-white sm:px-6 lg:px-8">
       <div className="mx-auto flex min-h-[calc(100vh-5rem)] max-w-6xl flex-col items-center justify-center gap-6">
-        <section className="w-full max-w-2xl rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-10">
+        <section className="w-full max-w-3xl rounded-[2rem] border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/40 backdrop-blur-xl sm:p-10">
           <div className="mb-8 space-y-3 text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.4em] text-amber-300/90">Countdown Timer</p>
             <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl">Pick a date and launch the clock</h1>
